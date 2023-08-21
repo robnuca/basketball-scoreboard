@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Basketball Score Counter</title>
+        <link rel="stylesheet" href="index.scss">
+    </head>
+    <body>
+        <div id="local-time"></div>
+        <div class="container">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div id="home-counter" class="home-score">0</div>
+                <div class="home-increment">
+                    <button onclick="homeIncrementOne()">+1</button>
+                    <button onclick="homeIncrementTwo()">+2</button>
+                    <button onclick="homeIncrementThree()">+3</button>
+                </div>
+            </div>
+            <div class="guest-container">
+                <h3>GUEST</h3>
+                <div id="guest-counter" class="guest-score">0</div>
+                <div class="guest-increment">
+                    <button onclick="guestIncrementOne()">+1</button>
+                    <button onclick="guestIncrementTwo()">+2</button>
+                    <button onclick="guestIncrementThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="timer">
+            <div id="timer-display">12:00</div>
+            <div class="timer-buttons">
+                <button id="startTimerButton" onclick="countDown()">Start</button>
+                <button id="stopTimerButton" onclick="stopTimer()">Stop</button>
+                <button id="resetTimerButton" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+        <div class="new-game">
+            <button id="newGameButton" onclick="newGame()">New Game</button>
+            <div id="text-confirmation"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
